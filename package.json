@@ -1,0 +1,40 @@
+{
+  "name": "node-fs-quick",
+  "author": "Reetesh Kumar",
+  "version": "1.0.1",
+  "description": "NodeJs fs module with promise and easy to use",
+  "license": "MIT",
+  "repository": "",
+  "module": "./dist/esm/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --legacy-output --minify --format esm,cjs --dts --external fs --out-dir dist",
+    "size": "size-limit"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "size-limit": "^8.1.0",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "files": [
+    "dist/**"
+  ],
+  "size-limit": [
+    {
+      "path": "dist/index.js",
+      "limit": "10 KB"
+    }
+  ],
+  "keywords": [
+    "node fs"
+  ]
+}
