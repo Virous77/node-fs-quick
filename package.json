@@ -9,7 +9,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup index.ts --legacy-output --minify --format esm,cjs --dts --external fs --out-dir dist",
+    "build": "tsup src/index.ts --legacy-output --minify --format esm,cjs --dts --external fs --out-dir dist",
     "size": "size-limit"
   },
   "dependencies": {},
