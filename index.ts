@@ -17,9 +17,9 @@ export {
   writeJsonFile,
   readJsonFile,
   readyManyFiles,
-} from "./server";
+} from "./src/server";
 
-export { uploadFilesTOS3, downloadFilesFromS3 } from "./aws";
+export { uploadFilesTOS3, downloadFilesFromS3 } from "./src/aws";
 
 export type {
   IReadFile,
@@ -28,4 +28,4 @@ export type {
   ICopyFile,
   UploadS3,
   ReadS3,
-} from "./interface";
+} from "./src/interface";
